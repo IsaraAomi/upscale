@@ -38,14 +38,8 @@ def create_graph():
         """
         if i == 0:
             ax = fig.add_subplot(3, 2, 1)
-        elif i == 1:
-            ax = fig.add_subplot(3, 2, 3)
-        elif i == 2:
-            ax = fig.add_subplot(3, 2, 4)
-        elif i == 3:
-            ax = fig.add_subplot(3, 2, 5)
-        elif i == 4:
-            ax = fig.add_subplot(3, 2, 6)
+        elif i >= 1:
+            ax = fig.add_subplot(3, 2, i+1)
         else:
             sys.exit(1)
         ax.set_title(file_name, fontsize=40)
